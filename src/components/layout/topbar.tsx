@@ -1,6 +1,7 @@
 "use client";
 
 import { Bell, User } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { MOCK_USER } from "@/lib/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -26,8 +27,7 @@ export function Topbar() {
         </Button>
 
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="relative h-10 w-auto flex items-center gap-2 pl-2">
+          <DropdownMenuTrigger className={cn("relative h-10 w-auto flex items-center gap-2 pl-2 rounded-md hover:bg-muted transition-colors", "outline-none focus-visible:ring-2 focus-visible:ring-ring")}>
               <Avatar className="h-8 w-8">
                 <AvatarImage src={MOCK_USER.avatar} alt={MOCK_USER.name} />
                 <AvatarFallback className="bg-primary/10 text-primary">
@@ -38,7 +38,6 @@ export function Topbar() {
                 <span className="text-sm font-medium leading-none">{MOCK_USER.name}</span>
                 <span className="text-xs text-text-secondary mt-1">{MOCK_USER.role}</span>
               </div>
-            </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
             <DropdownMenuLabel>حسابي</DropdownMenuLabel>

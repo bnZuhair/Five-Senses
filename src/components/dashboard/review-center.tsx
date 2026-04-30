@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Clock, History } from "lucide-react";
 
-export function ResourceCenter() {
+export function ReviewCenter() {
    return (
       <Card className="h-full border-danger/20 bg-surface-card shadow-sm">
          <CardHeader className="pb-4">
@@ -20,7 +20,7 @@ export function ResourceCenter() {
                   <div className="space-y-1.5">
                      <h4 className="font-bold text-primary">أثر الحالة النفسية على الجسد</h4>
                      <p className="text-sm text-text-secondary leading-relaxed">
-                        مرت فترة منذ اخر مراجعة. ما رايك ان تمر بسرعة على الجلسة؟
+                        مرت فترة منذ اخر مراجعة. ما رايك ان تمر بسرعة على الموضوع؟
                      </p>
                      <Button variant="link" className="px-0 text-danger font-bold h-auto py-1">
                         ابدأ المراجعة
@@ -46,7 +46,6 @@ export function ResourceCenter() {
                   </div>
                </div>
             </div>
-
 
             {/* Recent Review */}
             <div className="rounded-xl border border-border bg-surface p-4 opacity-75">

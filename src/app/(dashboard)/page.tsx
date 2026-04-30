@@ -1,5 +1,5 @@
 import { WelcomeHeader } from "@/components/dashboard/welcome-header";
-import { ResourceCenter } from "@/components/dashboard/resource-center";
+import { ReviewCenter } from "@/components/dashboard/review-center";
 import { RecentSessions } from "@/components/dashboard/recent-sessions";
 import { StatsSection } from "@/components/dashboard/stats-section";
 import { Button } from "@/components/ui/button";
@@ -18,9 +18,9 @@ export default function DashboardPage() {
           <RecentSessions />
         </div>
 
-        {/* Sidebar Area (Resource Center) */}
+        {/* Sidebar Area (Review Center) */}
         <div className="lg:col-span-4 order-1 lg:order-2">
-          <ResourceCenter />
+          <ReviewCenter />
         </div>
       </div>
 
