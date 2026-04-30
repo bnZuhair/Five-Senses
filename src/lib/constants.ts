@@ -47,18 +47,18 @@ export const MOCK_USER = {
 export const RECENT_SESSIONS = [
   {
     id: "1",
-    sense: "hearing",
-    title: "فيزياء الموجات الصوتية",
-    description: "دراسة الترددات والاهتزازات في الأذن الوسطى وتأثيرها على القوقعة.",
-    progress: 40,
-    timeAgo: "أمس",
-  },
-  {
-    id: "2",
     sense: "sight",
     title: "تشريح العين البشرية",
     description: "فهم كيفية معالجة الضوء وتحويله إلى إشارات عصبية معقدة في الشبكية.",
     progress: 75,
     timeAgo: "منذ ساعتين",
+  },
+  {
+    id: "2",
+    sense: "hearing",
+    title: "فيزياء الموجات الصوتية",
+    description: "دراسة الترددات والاهتزازات في الأذن الوسطى وتأثيرها على القوقعة.",
+    progress: 40,
+    timeAgo: "أمس",
   },
 ];
