@@ -24,24 +24,26 @@ export function UrlInput({ onAdd }: UrlInputProps) {
   };
 
   return (
-    <div className="w-full">
-      <div className="rounded-2xl border-2 border-border/60 bg-transparent p-12 min-h-[280px] flex flex-col items-center justify-center gap-6">
+    <div className="w-full rounded-2xl border-2 border-border/60 bg-surface/30 focus-within:border-primary/50 transition-colors overflow-hidden flex flex-col shadow-sm">
+      <div className="flex-1 p-8 flex items-center justify-center min-h-[220px]">
         <Input 
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           onKeyDown={handleKeyDown}
           type="url" 
           placeholder="https://example.com/article" 
-          className="max-w-xl h-14 text-lg text-center rounded-xl border-border/60 focus-visible:border-primary focus-visible:ring-1 focus-visible:ring-primary/20"
+          className="max-w-xl w-full h-16 text-lg text-center rounded-xl border-2 border-border/80 focus-visible:border-primary focus-visible:ring-primary/20 bg-surface-card shadow-inner transition-all placeholder:text-text-secondary/50"
           dir="ltr"
         />
+      </div>
+      <div className="bg-surface-card p-4 flex justify-end border-t border-border/50">
         <Button 
           onClick={handleAdd}
           disabled={!url.trim()}
-          className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 px-8"
+          className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 px-8 rounded-xl h-11 shadow-sm transition-all hover:-translate-y-0.5 active:translate-y-0"
         >
-          <Plus className="h-4 w-4" />
-          إضافة الرابط
+          <Plus className="h-5 w-5" />
+          <span className="font-bold text-sm">إضافة الرابط</span>
         </Button>
       </div>
     </div>
